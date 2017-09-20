@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140093241F7227D600967FC8 /* poketmon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 140093231F7227D600967FC8 /* poketmon.jpeg */; };
+		140093261F72320B00967FC8 /* 33.png in Resources */ = {isa = PBXBuildFile; fileRef = 140093251F72320B00967FC8 /* 33.png */; };
 		14C5F4C71F70E30F00BB414B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5F4C61F70E30F00BB414B /* AppDelegate.swift */; };
 		14C5F4C91F70E30F00BB414B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C5F4C81F70E30F00BB414B /* ViewController.swift */; };
 		14C5F4CC1F70E30F00BB414B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14C5F4CA1F70E30F00BB414B /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		140093231F7227D600967FC8 /* poketmon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = poketmon.jpeg; path = ../../../../.Trash/poketmon.jpeg; sourceTree = "<group>"; };
+		140093251F72320B00967FC8 /* 33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 33.png; path = ../../../../.Trash/33.png; sourceTree = "<group>"; };
 		14C5F4C31F70E30F00BB414B /* 03_Map_Pin_Plist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 03_Map_Pin_Plist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C5F4C61F70E30F00BB414B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14C5F4C81F70E30F00BB414B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				14C5F4DD1F70E70300BB414B /* ViewPoint.plist */,
 				14C5F4C61F70E30F00BB414B /* AppDelegate.swift */,
 				14C5F4C81F70E30F00BB414B /* ViewController.swift */,
+				140093251F72320B00967FC8 /* 33.png */,
+				140093231F7227D600967FC8 /* poketmon.jpeg */,
 				14C5F4CA1F70E30F00BB414B /* Main.storyboard */,
 				14C5F4CD1F70E30F00BB414B /* Assets.xcassets */,
 				14C5F4CF1F70E30F00BB414B /* LaunchScreen.storyboard */,
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				14C5F4D11F70E30F00BB414B /* LaunchScreen.storyboard in Resources */,
+				140093261F72320B00967FC8 /* 33.png in Resources */,
 				14C5F4DE1F70E70300BB414B /* ViewPoint.plist in Resources */,
+				140093241F7227D600967FC8 /* poketmon.jpeg in Resources */,
 				14C5F4CE1F70E30F00BB414B /* Assets.xcassets in Resources */,
 				14C5F4CC1F70E30F00BB414B /* Main.storyboard in Resources */,
 			);
@@ -315,6 +323,7 @@
 				14C5F4D71F70E30F00BB414B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,MKMapViewDelegate {
     @IBOutlet weak var myMap: MKMapView!
 
     override func viewDidLoad() {
@@ -27,6 +27,8 @@ class ViewController: UIViewController {
         
         //pin저장
         var annotations = [MKPointAnnotation]()
+        myMap.delegate = self
+        
         
         if let myitems = content {
             for item in myitems{
@@ -73,5 +75,35 @@ class ViewController: UIViewController {
  
             
     }
+
+
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?{
+        let iden = "mypin"
+        
+        var myMapView = myMap.dequeueReusableAnnotationView(withIdentifier: iden)
+       
+        if myMapView == nil{
+            myMapView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: iden)
+            myMapView?.canShowCallout = true
+            let leftIconView = UIImageView(frame: CGRect(x:0, y:0, width:53,height:53))
+            if annotation.title! == "동의중학교" {
+                leftIconView.image = UIImage(named:"poketmon.jpeg")
+            }else{
+                leftIconView.image = UIImage(named: "33.png")
+            }
+           
+            myMapView?.leftCalloutAccessoryView = leftIconView
+            let btn = UIButton(type: .detailDisclosure)
+            
+            myMapView?.rightCalloutAccessoryView = btn
+            myMapView?.tintColor = UIColor.blue
+            
+        }
+        else {
+            myMapView?.annotation = annotation
     
+    }
+        return myMapView
+        }
+
 }
